@@ -32,14 +32,21 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <p class={tw`my-6`}>
-        Welcome to `fresh`. Try update this message in the ./routes/index.tsx
-        file, and refresh.
-      </p>
+      <p class={tw`my-6 p-2 text-center`}>Selamat Datang ke Donaco</p>
       <Counter start={3} />
-      <nav>
-        <a href="/html/">Donasi</a> |<a href="/css/">Galang Dana</a> |
-        <a href="/js/">JavaScript</a> |<a href="/python/">Python</a>
+      <nav class={tw`flex space-x-2 text-center justify-center `}>
+        <a class={tw`bg-blue-300 p-2 rounded-lg`} href="/html/">
+          Donasi
+        </a>
+        <a class={tw`bg-blue-300 p-2 rounded-lg`} href="/css/">
+          Galang Dana
+        </a>
+        <a class={tw`bg-blue-300 p-2 rounded-lg`} href="/js/">
+          Donasiku
+        </a>
+        <a class={tw`bg-blue-300 p-2 rounded-lg`} href="/profile/">
+          Profile
+        </a>
       </nav>
     </div>
   );
